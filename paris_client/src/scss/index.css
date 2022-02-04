@@ -1,0 +1,138 @@
+/**
+ * import all scss files here
+ * 
+ * node-sass": "^7.0.1",
+ */
+.homeImgContent {
+  width: 100%;
+  height: 80vh;
+}
+
+.homeTitleBoxContent {
+  position: absolute;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 20vh;
+  width: 100%;
+  height: 60vh;
+  color: #fff;
+}
+
+.homeTitleBoxContent hr {
+  height: 1vh;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.homeTitleBoxContent h1 {
+  margin: 0;
+  font-size: 7vw;
+}
+
+.homeTitleBoxContent p {
+  margin: 0;
+  font-size: 4vw;
+}
+
+.homeBannerContent {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 60vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.homeBannerContent h3 {
+  padding: 4vh;
+  margin: 2px;
+  font-size: 3vw;
+  -webkit-animation: introText 2s ease-in-out infinite;
+          animation: introText 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes introText {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #337AB7;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes introText {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #337AB7;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+.homeImgHero {
+  height: 80vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.homeFooterContent {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+}
+
+.linkBoxBtn {
+  border: 10px double #000;
+  border-color: #000;
+  border-radius: 15px;
+  background-color: #262626;
+  opacity: 0.2;
+}
+
+.linkBoxBtn:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 5px solid #000;
+  background-color: #337AB7;
+  opacity: 1;
+}
+
+.linkBoxBtn:hover .iconBtnLinkBox {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  overflow: hidden;
+  color: #fff;
+}
+
+.iconBtnLinkBox {
+  padding: 15px;
+  color: #000;
+  font-size: 4vw;
+}
+/*# sourceMappingURL=index.css.map */

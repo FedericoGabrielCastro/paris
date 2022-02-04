@@ -1,0 +1,23 @@
+.linkBoxBtn{
+    border: 10px double #000;
+    border-color: #000;
+    border-radius: 15px;
+    background-color: #262626;
+    opacity: 0.2;
+    &:hover {
+        transition: 1s;
+        border: 5px solid #000;
+        background-color: #337AB7;
+        opacity: 1;
+        .iconBtnLinkBox {
+            transition: 1.5s;
+            overflow: hidden;
+            color: #fff;
+        }
+    }
+} 
+.iconBtnLinkBox {
+    padding: 15px;
+    color: #000;
+    font-size: 4vw;
+}

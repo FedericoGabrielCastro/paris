@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 
 import { CustomRoutes } from './routes/routes'
+import "./scss/index.css"
 
 function App() {
   return (
