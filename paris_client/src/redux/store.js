@@ -9,9 +9,15 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension"
+import { setFoodNameReducer } from "./ducks/setFoodNameDuks";
+import { setFoodQuantityReducer } from "./ducks/setFoodQuantityDuks";
+import { setFoodListReducer } from "./ducks/getFoodList";
 
 const rootReducers = combineReducers({
-    // import all reducers.
+    setFoodNameReducer: setFoodNameReducer, // set food name
+    setFoodQuantityReducer: setFoodQuantityReducer, //set food quantity
+    setFoodListReducer: setFoodListReducer, // get foods list
+
 })
 
 export const store = createStore (

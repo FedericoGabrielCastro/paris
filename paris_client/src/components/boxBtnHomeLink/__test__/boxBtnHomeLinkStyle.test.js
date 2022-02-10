@@ -2,17 +2,12 @@ const { render } = require("../../../helpers/jestSassHelper")
 
 describe('test boxBtnHomeLinkStyle', () => {
     
-    // test('should have the scss className named in the text', async () => {
+    const file = "src/components/boxBtnHomeLink/_boxBtnHomeLinkStyle.scss"
+    
+    test('Render', async () => {
         
-    //     return render({
-    //         file: "src/components/boxBtnHomeLink/_boxBtnHomeLinkStyle.scss"
-    //     }).then(output => {
-    //         expect(output.css.toString()).toContain(
-    //             "linkBoxBtn",
-    //             "iconBtnLinkBox"
-    //         )
-    //     })
-    // });
+        return render({
+            file: file
+        })
+    });
 });
-
-// file: "src/components/boxBtnHomeLink/_boxBtnHomeLinkStyle.scss"

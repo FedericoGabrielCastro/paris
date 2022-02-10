@@ -5,20 +5,19 @@
  */
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FoodPage from '../views/FoodPage/FoodPage';
 
 import HomePage from '../views/HomePage/HomePage';
-// import NavigationAndFooterContent from '../components/Layouts/NavigationAndFooterContent';
 
 export const CustomRoutes = () => {
     
     return (
         <BrowserRouter>
-            {/* <NavigationAndFooterContent> */}
                 <Routes>
                     {/* Public Route */}
                     <Route exact path={"/"} element={<HomePage />} />
+                    <Route exact path={"/food"} element={<FoodPage />} />
                 </Routes>
-            {/* </NavigationAndFooterContent> */}
         </BrowserRouter>
     ) 
 } 

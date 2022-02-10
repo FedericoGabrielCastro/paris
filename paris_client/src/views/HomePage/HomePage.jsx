@@ -2,7 +2,6 @@
  * Render the Home page component
  * 
  */
-
 import React from 'react';
 
 import todo from '../../assets/banner.jpeg'
@@ -22,7 +21,7 @@ const HomePage = () => {
                         <hr></hr>
                     </article>
                     <article className='homeBannerContent'>
-                        <h3> Full stack CRUD application Mern + Jest + Sass </h3>
+                        <h3> Full stack CRUD application MERN + Jest + Sass </h3>
                     </article>
                     <img className="homeImgHero" src={todo} alt='toDo img'/>
                 </section>

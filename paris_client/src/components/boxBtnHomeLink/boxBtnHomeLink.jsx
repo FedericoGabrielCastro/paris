@@ -11,7 +11,7 @@ import { GiClothes } from "react-icons/gi";
 import { BsPencil } from "react-icons/bs";
 
 const dataBtn = [
-    { path: "/", icon: MdOutlineFoodBank },
+    { path: "/food", icon: MdOutlineFoodBank },
     { path: "/", icon: GiClothes },
     { path: "/", icon: BsPencil }
 ]
