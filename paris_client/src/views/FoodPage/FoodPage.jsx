@@ -8,29 +8,25 @@ import React, { useState, useEffect, useCallback }  from 'react';
 import { useDispatch, useSelector } from "react-redux"
 import Axios from "axios"
 
-import { setFoodNameAction } from '../../redux/ducks/setFoodNameDuks';
-import { setFoodQuantityAction } from '../../redux/ducks/setFoodQuantityDuks'
-import { getFoodListAction } from '../../redux/ducks/getFoodList';
+import { setFoodNameAction } from '../../redux/ducks/setFoodName';
+import { setFoodQuantityAction } from '../../redux/ducks/setFoodQuantity'
+import { setFoodListAction } from '../../redux/ducks/getFoodList'; 
 
 const FoodPage = () => {
 
     const dispatch = useDispatch()
 
-    const foodName = useSelector(store => store.setFoodNameReducer)
-    const quantity = useSelector(store => store.setFoodQuantityReducer)
-    const foodListT = useSelector(store => store.setFoodListReducer)
-    console.log(foodListT)
+    const foodName = useSelector(store => store.setFoodNameReducer) // set food name
+    const quantity = useSelector(store => store.setFoodQuantityReducer) // set food quantity
+    const foodList = useSelector(store => store.setFoodListReducer.foodList) // get food list
 
-    // const [foodName, setFoodName] = useState("");
-    // const [quantity, setQuantity] = useState(0);
-    const [foodList, setFoodList] = useState([])
     const [newFoodName, setNewFoodName] = useState("")
     
     useEffect(() => {
-        Axios.get("http://localhost:8000/food/read").then((response) => {
-            setFoodList(response.data)
-        })
-    }, [])
+        dispatch(setFoodListAction())
+    },[])
+
+    console.log(foodList)
 
     // set food name 
     const setFoodName = useCallback(event => {
