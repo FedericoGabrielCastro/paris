@@ -1,5 +1,3 @@
-import Axios from "axios"
-
 // types
 export const GET_FOOD_LIST = "GET_FOOD_LIST"
 export const SET_FOOD_LIST = "SET_FOOD_LIST"

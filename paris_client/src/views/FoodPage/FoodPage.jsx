@@ -24,19 +24,19 @@ const FoodPage = () => {
     
     useEffect(() => {
         dispatch(setFoodListAction())
-    },[])
-
-    console.log(foodList)
-
+    }, [dispatch, foodList])
+    
     // set food name 
     const setFoodName = useCallback(event => {
+        console.log("foodName: " + event.target.value)
         dispatch(setFoodNameAction(event.target.value))
-    }, [dispatch])
+    },[dispatch])
 
     // set food quantity
     const setQuantity = useCallback(event => {
+        console.log("quantity: " + event.target.value)
         dispatch(setFoodQuantityAction(event.target.value))
-    }, [dispatch])
+    },[dispatch])
 
     // add info to database
     const addToList = () => {
